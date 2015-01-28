@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+
+ 	<video id="Video_src" controls>
+	  	<source src="Wildlife.mp4" type="video/mp4">
+		Video Não Suportado
+	</video>
+
+
+
+	<div id="Legenda"></div>
+
+
+	<div class="bt_legenda" onclick="toogleAtivo();">Ativar/Desativar</div>
+
+	<script type="text/javascript" src="js/legendas.js"></script>
+	<script type="text/javascript" src="js/LocalLegenda.js"></script>
+	<script type="text/javascript">
+
+		initVideoLegenda('Video_src', 'Legenda', Video1);
+
+	</script>
+</body>	
+</html>
