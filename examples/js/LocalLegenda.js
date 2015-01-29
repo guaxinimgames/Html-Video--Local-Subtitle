@@ -9,6 +9,12 @@ var ativo = true;
 var LegendaObj;
 var Intervalo;
 
+/**
+ * Initial Function to Subtitle a Video
+ * @param  {String} ID        Video ID 
+ * @param  {String} LegendaId Subtitle Div ID
+ * @param  {Variable} LegendaJS Variable in legendas.js to call subtitles values
+ */
 function initVideoLegenda(ID, LegendaId, LegendaJS)
 {
 
@@ -27,7 +33,11 @@ function initVideoLegenda(ID, LegendaId, LegendaJS)
 
 }
 
-
+/**
+ * Local function to init Subtitles
+ * @param  {String} LegendaId ID Subtitle Div
+ * @param  {variable} LegendaJS Subtitle variable to return text value
+ */
 function startLegenda(LegendaId, LegendaJS)
 {
   var encontrado = false;
@@ -48,12 +58,18 @@ function startLegenda(LegendaId, LegendaJS)
   }
 }
 
+/**
+ * Activate/Desactivate Subtitles
+ */
 function toogleAtivo()
 {
   if(ativo){ativo = false; LegendaObj.innerHTML = "";}
   else {ativo = true;}
 }
 
+/**
+ * Close Subtitles, do this when is not necessary to save Memory 
+ */
 function KillLegenda()
 {
   videoAtual = null;
